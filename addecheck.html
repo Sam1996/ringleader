@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<title>Welcome to ringleaders</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+<!-- Own CSS -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+<!-- FontAwesome -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="text-center logo1 clearfix">
+		<div class="content">
+			<a class="history" href="javascript:history.back()"><i class="fa fa-angle-left"></i></a>
+			<h1><img src="img/ringleader_logo_small.png" alt="ringleaders" /></h1>
+		</div>
+	</div>
+	
+	<div class="content">
+		<div class="addecheck">
+		<h6>Add New e-Check</h6>
+		<form action="paymentoption.html" name="paymentoption">
+		<div class="form">
+        	<div class="group">
+	          <label for="name" class="label">Name on Card</label>
+	          <input id="name" type="text" required class="input" placeholder="Name on Card">
+	        </div>
+	        <div class="group">
+	          <label for="number" class="label">Credit Card Number</label>
+	          <input id="number" type="text" required class="input" placeholder="Credit Card Number">
+	        </div>
+	        <div class="group">
+	          <label for="expdate" class="label">Expiry Date</label>
+	          <input class="datepicker input" required data-date-format="mm/dd/yyyy" id="expdate" placeholder="Expiry Date">
+	        </div>
+	        <div class="group">
+	          <label for="cvv" class="label">CVV</label>
+	          <input id="cvv" type="number" required class="input" placeholder="CVV Number">
+	        </div>
+	    </div>
+	    <h6>Billing Address</h6>
+		<div class="form">
+        	<div class="group">
+	          <label for="street" class="label">Street Line 1</label>
+	          <input id="street" type="text" required class="input" placeholder="Street line 1">
+	        </div>
+	        <div class="group">
+	          <label for="street1" class="label">Street Line 2</label>
+	          <input id="street1" type="text" required class="input" placeholder="Street line 2">
+	        </div>
+	        <div class="group">
+	          <label for="city" class="label">City</label>
+	          <input id="city" type="text" required class="input" placeholder="City">
+	        </div>
+	        <div class="group">
+	          <label for="state" class="label">State</label>
+	          <input id="state" type="text" required class="input" placeholder="State">
+	        </div>
+	        <div class="group">
+	          <label for="zip" class="label">Zip</label>
+	          <input id="zip" type="number" required class="input" placeholder="Zip">
+	        </div>
+		    <div class="group">
+	          <input type="submit" class="btn btn-orange" value="Add e-Check">
+	        </div>
+	    </div>
+	    </form>
+	    </div>
+	</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript">
+	$('.datepicker').datepicker({
+	    format: 'mm/dd/yyyy',
+	    startDate: '-3d'
+	});
+</script>
+</body>
+</html>

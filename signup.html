@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<title>Welcome to ringleaders</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Own CSS -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+<!-- FontAwesome -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="text-center logo clearfix">
+		<h1><img src="img/ringleader_logo_small.png" alt="ringleaders" /></h1>
+	</div>
+	<div class="content">
+		<div class="signup">
+		<h6>CREATE ACCOUNT</h6>
+		<div class="form">
+			<form action="login.html" name="signup">
+	        <div class="form-group group  col-md-6 col-sm-12">
+			    <input type="file" id="photo" name="img[]" class="file hide" >
+			    <label for="photo" class="label">Add Photo</label>
+			    <div class="input-group" style="margin: 0;">
+			      <input type="text" for="photo" class="form-control input-lg" disabled placeholder="Upload Image">
+			      <span class="input-group-btn">
+			        <button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> </button>
+			      </span>
+			    </div>
+			</div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="fname" class="label">First Name</label>
+	          <input id="fname" type="text" required class="input" placeholder="First Name">
+	        </div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="lname" class="label">Last Name</label>
+	          <input id="lname" type="text" required class="input" placeholder="Last Name">
+	        </div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="email" class="label">Email Address</label>
+	          <input id="email" type="email" required class="input" placeholder="Email ID">
+	        </div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="mobile" class="label">Mobile Number</label>
+	          <input id="mobile" type="number" required class="input" placeholder="Mobile Number">
+	        </div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="pass" class="label">Password</label>
+	          <input id="pass" type="password" required class="input" placeholder="Password">
+	        </div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="cpass" class="label">Confirm Password</label>
+	          <input id="cpass" type="password" required class="input" placeholder="Confirm Password">
+	        </div>
+	        <div class="group col-sm-12">
+	          <input type="submit" class="btn btn-orange" value="Signup">
+	        </div>
+	        </form>
+	        <div class="foot-lnk text-center">
+	          <span><a href="login.html">Already Member?</a></span>
+	        </div>
+	    </div>
+	    </div>
+	</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript">
+	$(document).on('click', '.browse', function(){
+	  var file = $(this).parent().parent().parent().find('.file');
+	  file.trigger('click');
+	});
+	$(document).on('change', '.file', function(){
+	  $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+	});
+</script>
+</body>
+</html>

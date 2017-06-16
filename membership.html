@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<title>Welcome to ringleaders</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+<!-- Own CSS -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+<!-- FontAwesome -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="text-center logo1 clearfix">
+		<div class="content">
+			<a class="history" href="javascript:history.back()"><i class="fa fa-angle-left"></i></a>
+			<h1><img src="img/ringleader_logo_small.png" alt="ringleaders" /></h1>
+		</div>
+	</div>
+	<div class="content">
+		<div id="membership">
+		<h6>Ring Leaders Membership</h6>
+		<div class="form">
+			<form action="paymentoption.html" name="membership">
+	        	<label class="control control--radio">30 Day free trail
+			      <input type="radio" name="membership" checked="checked"/>
+			      <div class="control__indicator"></div>
+			    </label>
+			    <label class="control control--radio">Month -to- Month $9.99
+			      <input type="radio" name="membership"/>
+			      <div class="control__indicator"></div>
+			    </label>
+			    <label class="control control--radio">1 Year $99.99
+			      <input type="radio" name="membership"/>
+			      <div class="control__indicator"></div>
+			    </label>
+	    </div>
+	    <h6>Crowd Voicing Subscription</h6>
+		<div class="form">
+	        	<div class="group">
+		          <label for="user" class="label">Number of Users</label>
+		          <input id="user" type="text" class="input" placeholder="Number of Users">
+		        </div>
+		        <div class="group">
+		          <label for="startdate" class="label">Start Date</label>
+		          <input class="datepicker input" data-date-format="mm/dd/yyyy" placeholder="Start Date" id="startdate">
+		        </div>
+		        <div class="group">
+		          <label for="enddate" class="label">End Date</label>
+		          <input class="datepicker input" data-date-format="mm/dd/yyyy" placeholder="End Date" id="enddate">
+		        </div>
+		        <div class="group">
+		          <input type="submit" class="btn btn-orange" value="Proceed to checkout">
+		        </div>
+	        </form>
+	    </div>
+	    </div>
+	</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript">
+	$('.datepicker').datepicker({
+	    format: 'mm/dd/yyyy',
+	    startDate: '-3d'
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+/* RESET CODE*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+	overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Common styles */
+@import url('https://fonts.googleapis.com/css?family=Rubik:100,400,500,700');
+/* font-family: 'Rubik', sans-serif; */
+
+body{
+	background: #efefef url("../img/logo-white.png") no-repeat center;
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+	color: #444;
+	overflow-x: hidden;
+}
+p{margin-bottom: 15px;}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Rubik', sans-serif;
+	color: #F14C1F;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 15px;
+}
+h1 {font-size: 36px}
+h2 {font-size: 30px}
+h3 {font-size: 26px}
+h4 {font-size: 20px}
+h5 {font-size: 18px}
+h6 {font-size: 16px; text-transform: uppercase;}
+img {max-width: 100%;}
+.title {font-weight: 700;}
+a {color:#F2681F;}
+a:hover {color:#EF411F; text-decoration: none;}
+.header i {font-size: 24px;}
+.header a {color:#F2681F;}
+.header a:hover {color:#F2681F;}
+.left {float: left;}
+.right {float: right;}
+.list-group-item .right {padding: 0 5px;}
+.block {display:table; line-height: 1.6}
+.bg-orange {
+	display: block;
+	background: #f26d1e; /* Old browsers */
+	background: -moz-linear-gradient(left, #f26d1e 0%, #ee2e21 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #f26d1e 0%,#ee2e21 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #f26d1e 0%,#ee2e21 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26d1e', endColorstr='#ee2e21',GradientType=1 ); /* IE6-9 */
+}
+.logo-bg {background:  url("../img/logo-white.png") no-repeat center; height: 80vh}
+.btn {text-transform: uppercase;}
+.btn-white {
+	background: #fff; color: #eb5820;
+	border:1px solid #fff; margin: 0 8px; padding: 6px 25px;
+}
+.round {border-radius:25px;}
+.btn-white.outline {color: #fff;}
+.outline {background: transparent;}
+.header {height: 48px; padding: 10px 0}
+.padding0 {padding: 0}
+.signup, .paymentoption, .membership, .addcard, .addecheck, .addusers, .users,
+.reauthenticate, .homepage, .notification, .groups, .auto-attendant {padding-bottom: 10px; margin-top: 10px;}
+#login, #forgotpass, .addcard, .groups, .addusers, .notification, .users, .addecheck, .live, .statistics,
+.paymentoption, #reauthenticate, #changepass, #membership, .conference {margin-top: 30px;}
+.history {font-size: 40px; line-height: 50px; float: left;}
+.delete {font-size: 30px; line-height: 50px; float: right;}
+.content {max-width: 768px; margin: 0 15px;}
+.clockpicker-canvas line {stroke:#f26d1e;}
+.clockpicker-canvas-bearing, .clockpicker-canvas-fg {fill: #f26d1e}
+.clockpicker-canvas-bg {fill: #ffc8a8;}
+.text-primary {color: #f26d1e;}
+.datepicker-switch {color: #f26d1e}
+.datepicker table tr td.active, 
+.datepicker table tr td.active.disabled, 
+.datepicker table tr td.active.disabled:hover, 
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.active, 
+.datepicker table tr td.active.disabled, 
+.datepicker table tr td.active.disabled.active, 
+.datepicker table tr td.active.disabled.disabled, 
+.datepicker table tr td.active.disabled:active, 
+.datepicker table tr td.active.disabled:hover, 
+.datepicker table tr td.active.disabled:hover.active, 
+.datepicker table tr td.active.disabled:hover.disabled, 
+.datepicker table tr td.active.disabled:hover:active, 
+.datepicker table tr td.active.disabled:hover:hover, 
+.datepicker table tr td.active.disabled:hover[disabled], 
+.datepicker table tr td.active.disabled[disabled], 
+.datepicker table tr td.active:active, 
+.datepicker table tr td.active:hover, 
+.datepicker table tr td.active:hover.active, 
+.datepicker table tr td.active:hover.disabled, 
+.datepicker table tr td.active:hover:active, 
+.datepicker table tr td.active:hover:hover, 
+.datepicker table tr td.active:hover[disabled], 
+.datepicker table tr td.active[disabled] {background: #f26d1e}
+/* Logo */
+.logo {padding:8px 30px; background: #000; margin-bottom: 10px}
+.logo1 {padding:8px; background: #000; margin-bottom: 10px}
+.logo h1, .logo1 h1 {margin-bottom: 0; display: inline-block;}
+.margin-b0 {margin-bottom: 0px;}
+.adduser-concall {margin-bottom: 20px; display: block;}
+.adduser-concall i {margin-right: 20px;}
+/* Slide Menu */
+nav:not(.mm-menu)
+{
+	display: none;
+}
+
+/* Index*/
+.bottom10 {position:absolute; bottom: 10%; width:90%}
+
+ /* Login page */
+
+.form {
+	max-width: 700px;
+	margin: 8px auto 25px;
+}
+.form .group { 
+	position: relative; 
+	margin-bottom: 45px; 
+}
+.form input {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	-webkit-appearance: none;
+	display: block;
+	background: #fafafa;
+	color: #636363;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #757575;
+}
+.form .input-lg { height: 41px}
+.form .input-group .input-group-btn .btn,
+.form .input-group input {background: transparent; border: 0px;}
+.form .input-group .input-group-btn .btn i {color: #F2681F}
+.form input:focus { outline: none; }
+.form label {text-align: left;}
+.form .group{
+	margin-bottom:15px;
+}
+.form .input-group .button:focus,
+.form .input-group input:focus,
+.form .group .button:focus,
+.form .group .input:focus {outline: none; box-shadow: none; border:1px solid #f04f1f;}
+.form .group .label,
+.form .group .input,
+.form .group .button{
+	width:100%;
+	color:#444;
+	display:block;
+}
+.form .group .input,
+.form .group .button{
+	border:none;
+	padding:10px 20px;
+	border-radius:4px;
+	background:#d1d3d3;
+	border:1px solid #f04f1f;
+}
+.form .group input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.form .group input[type="password"]:before {content: "asdf"; position: relative;}
+.form .group .label{
+	color:#e2e2e2;
+	font-size:12px;
+	font-weight: 100;
+	display: none;
+}
+.form .group .button{
+	background:#F2681F;
+}
+.form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.form .group label .icon:before,
+.form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	-webkit-transition:all .2s ease-in-out 0s;
+	transition:all .2s ease-in-out 0s;
+}
+.form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	-webkit-transform:scale(0) rotate(0);
+	        transform:scale(0) rotate(0);
+}
+.form .group label .icon:after{
+	top:6px;
+	right:0;
+	-webkit-transform:scale(0) rotate(0);
+	        transform:scale(0) rotate(0);
+}
+.hide, .form .group .check {visibility: hidden;}
+.form .group .check:unchecked + label{color: #efefef}
+.form .group .check:checked + label{
+	color:#fff;
+}
+.form .group .check:checked + label .icon{
+	background:#F2681F;
+}
+.form .group .check:checked + label .icon:before{
+	-webkit-transform:scale(1) rotate(45deg);
+	        transform:scale(1) rotate(45deg);
+}
+.form .group .check:checked + label .icon:after{
+	-webkit-transform:scale(1) rotate(-45deg);
+	        transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .form .sign-in-htm{
+	-webkit-transform:rotate(0);
+	        transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .form .sign-up-htm{
+	-webkit-transform:rotate(0);
+	        transform:rotate(0);
+}
+
+.form .group input[class="datepicker input"] {position: relative;}
+.form .group input[class="datepicker input"]:before {
+	font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "\f073";
+}
+
+.hr{
+	height:2px;
+	margin:20px auto;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk p {color: #444; text-align: center; margin: 8px auto;}
+
+.form input.btn-orange,
+.btn-orange {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f26d1e+0,ee2e21+100 */
+	background: #f26d1e; /* Old browsers */
+	background: -moz-linear-gradient(left, #f26d1e 0%, #ee2e21 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #f26d1e 0%,#ee2e21 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #f26d1e 0%,#ee2e21 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26d1e', endColorstr='#ee2e21',GradientType=1 ); /* IE6-9 */
+	border:0px;
+	color: #fff;
+	margin-right: 10px;
+	border: 1px solid #F2681F
+	border-radius:25px;
+}
+/* Membership Page */
+.userdetail ul li,
+.paymentoption ul li,
+.container ul li {background: transparent; color: #444}
+.noborder .list-group-item {border: 0px; overflow: hidden; vertical-align: middle;}
+.header .select__arrow {top: 10px;}
+.header .select select {padding: 6px 15px; width: 300px; max-width: 100%}
+ul.noborder li i {margin-right: 10px;}
+/* Uer profile */
+.user_profile {
+    padding: 10px;
+}
+.user_profile h3 {color:#fff; text-transform: uppercase;}
+.user_profile .text-mute {color: #ddd}
+
+/* Groups */
+.ringsetting {width: 100%}
+.select.ringsetting select {
+	background:rgba(255,255,255,.1); 
+	border-radius: 25px;
+	padding: 10px 20px; 
+	font-size: 18px
+}
+.select.ringsetting select:hover, 
+.select.ringsetting select:focus,
+.select.ringsetting select option:checked,
+.select.ringsetting select option:hover {
+    color: #fff;
+    background:#191919;
+}
+.select.ringsetting select:hover ~ .select__arrow, 
+.select.ringsetting select:focus ~ .select__arrow {
+	border-top-color: #F14C1F;	
+}
+.input-group {
+	background: #d1d3d3;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	border:1px solid #f04f1f;
+}
+.input-group input {
+	padding: 10px 20px
+}
+.input-group-addon {
+	border: 0px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+
+}
+/* Auto attendant */
+.auto-attendant .group p {font-size: 18px; line-height: 2.5; }
+
+/* Home page */
+.card {background: rgba(0,0,0,.05); padding: 30px 10px; margin-bottom: 20px;}
+a:hover .card {background: rgba(255,255,255,.2)}
+.card i {font-size: 40px; margin-bottom: 20px;}
+.card h4 { text-transform: uppercase; color: #F2681F}
+
+/* live */
+.container .nav-tabs {position:absolute; bottom: 0px; width: 100%; border-bottom:0;}
+.container .tabbable {height: calc(80vh); position: relative; padding-top: 30px}
+.conference .tabbable {height: calc(75vh); padding-top: 0}
+.container .tabbable .icon{max-height: 120px;}
+.container .tabbable .tab-content {margin-top: 20px;}
+.container .nav-tabs li {width: calc(100%/3); text-align: center;} 
+.conference .nav-tabs li {width: calc(100%/2); text-align: center;} 
+.container .nav-tabs li a {border-bottom: 4px solid #000; font-size: 1em;}
+.container .nav-tabs li.active a {border:0; border-bottom: 4px solid #F2681F; background: transparent;}
+.tab-pane ul.userlist {background: #fefefe; box-shadow: 0 0 5px #ccc;}
+.tab-pane ul.userlist li {padding: 15px 15px}
+.tab-pane ul.userlist li i {margin-right: 10px;}
+.table {background: #fff;}
+iframe {height: calc(85vh)}

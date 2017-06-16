@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<title>Welcome to ringleaders</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+<!-- Own CSS -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+<!-- FontAwesome -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="text-center logo1 clearfix">
+		<div class="content">
+			<a class="history" href="javascript:history.back()"><i class="fa fa-angle-left"></i></a>
+			<h1><img src="img/ringleader_logo_small.png" alt="ringleaders" /></h1>
+			<a href="#" class="delete"><i class="fa fa-trash"></i></a>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="addusers">
+		<h6>Group Setting</h6>
+		<div class="form">
+			<div class="input-group">
+	          <input id="gname" type="text" required class="input" value="Sales Group">
+	          <span class="input-group-addon bg-orange" id="basic-addon1"><i class="fa fa-pencil"></i></span>
+	        </div>
+	        <div class="group">
+	          <label for="gextention" class="label">Group Extenstion</label>
+	          <input id="gextention" type="text" required class="input" value="101">
+	        </div>
+	        <div class="group">
+	          <label for="gcallerid" class="label">Group Caller ID</label>
+	          <input id="gcallerid" type="text" required class="input" value="Sales Group">
+	        </div>
+	        <div class="group">
+			  <label for="gcallerid" class="label">Group Ring Setting</label>
+			  <select class="input">
+			    <option>Round Robin</option>
+			    <option>Ring All</option>
+			  </select>
+			</div>
+	        <p class="title">Configure Round Robin</p>
+	        <div class="input-group">
+	          <span class="input-group-addon bg-orange" id="basic-addon1">1</span>
+	          <input id="gcallerid" type="text" required class="input" value="John Doe">
+	        </div>
+	        <div class="input-group">
+	          <span class="input-group-addon bg-orange" id="basic-addon1">2</span>
+	          <input id="gcallerid" type="text" required class="input" value="John Doe">
+	        </div>
+	        <div class="input-group">
+	          <span class="input-group-addon bg-orange" id="basic-addon1">3</span>
+	          <input id="gcallerid" type="text" required class="input" value="John Doe">
+	        </div>
+	        <div class="input-group">
+	          <span class="input-group-addon bg-orange" id="basic-addon1">4</span>
+	          <input id="gcallerid" type="text" required class="input" value="John Doe">
+	        </div>
+	        <div class="input-group">
+	          <span class="input-group-addon bg-orange" id="basic-addon1">5</span>
+	          <input id="gcallerid" type="text" required class="input" value="John Doe">
+	        </div>
+	        <div class="group">
+	          <input type="submit" class="btn btn-orange" value="Done">
+	        </div>
+		</div>
+		</div>
+	</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript">
+	$(document).on('click', '.browse', function(){
+	  var file = $(this).parent().parent().parent().find('.file');
+	  file.trigger('click');
+	});
+	$(document).on('change', '.file', function(){
+	  $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<div class="text-center logo clearfix">
+		<h1><img src="img/ringleader_logo_small.png" alt="ringleaders" /></h1>
+	</div>
+	<div class="content">
+		<div class="signup">
+		<h6>CREATE ACCOUNT</h6>
+		<div class="form">
+			<form name="signup" ng-submit="register(register)">
+	        <div class="form-group group  col-md-6 col-sm-12">
+			    <input type="file" id="photo" name="img[]" class="file hide" >
+			    <label for="photo" class="label">Add Photo</label>
+			    <div class="input-group" style="margin: 0;">
+			      <input type="text" for="photo" class="form-control input-lg" disabled placeholder="Upload Image">
+			      <span class="input-group-btn">
+			        <button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> </button>
+			      </span>
+			    </div>
+			</div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="fname" class="label">First Name</label>
+	          <input id="fname" type="text" required class="input" placeholder="First Name" ng-model="register.firstname">
+	        </div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="lname" class="label">Last Name</label>
+	          <input id="lname" type="text" required class="input" placeholder="Last Name" ng-model="register.lastname">
+	        </div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="email" class="label">Email Address</label>
+	          <input id="email" type="email" required class="input" placeholder="Email ID" ng-model="register.email">
+	        </div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="mobile" class="label">Mobile Number</label>
+	          <input id="mobile" type="number" required class="input" placeholder="Mobile Number" ng-model="register.mobile">
+	        </div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="pass" class="label">Password</label>
+	          <input id="pass" type="password" required class="input" placeholder="Password" ng-model="register.password">
+	        </div>
+	        <div class="group col-md-6 col-sm-12">
+	          <label for="cpass" class="label">Confirm Password</label>
+	          <input id="cpass" type="text" required class="input" placeholder="Confirm Password" ng-model="register.product">
+	        </div>
+	        <div class="group col-sm-12">
+	          <input type="submit" class="btn btn-orange" value="Signup">
+	        </div>
+	        </form>
+	        <div class="foot-lnk text-center">
+	          <span><a href="login.html">Already Member?</a></span>
+	        </div>
+	    </div>
+	    </div>
+	</div>
+	<script type="text/javascript">
+	$(document).on('click', '.browse', function(){
+	  var file = $(this).parent().parent().parent().find('.file');
+	  file.trigger('click');
+	});
+	$(document).on('change', '.file', function(){
+	  $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+	});
+</script>

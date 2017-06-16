@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<title>Welcome to ringleaders</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+<!-- Own CSS -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+<!-- FontAwesome -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="text-center logo1 clearfix">
+		<div class="content">
+			<a class="history" href="javascript:history.back()"><i class="fa fa-angle-left"></i></a>
+			<h1><img src="img/ringleader_logo_small.png" alt="ringleaders" /></h1>
+			<a class="delete" href="gps-map.html"><i class="fa fa-street-view"></i></a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="conference">
+			<h6>GPS Maping</h6>
+			<div class="tabbable tabs-below">
+				<div class="tab-content">
+			         <div class="tab-pane active" id="groups">
+						<form action="" name="" class="form">
+				        	<label class="control control--radio">Sales
+						      <input type="radio" name="groups" checked="checked"/>
+						      <div class="control__indicator"></div>
+						    </label>
+						    <label class="control control--radio">Technical Support
+						      <input type="radio" name="groups"/>
+						      <div class="control__indicator"></div>
+						    </label>
+						    <label class="control control--radio">Accounts
+						      <input type="radio" name="groups"/>
+						      <div class="control__indicator"></div>
+						    </label>
+						</form>
+			         </div>
+			         <div class="tab-pane" id="users">
+			         	<form action="" name="" class="form">
+			         		<label class="control control--radio">John Doe
+						      <input type="radio" name="users" checked="checked"/>
+						      <div class="control__indicator"></div>
+						    </label>
+						    <label class="control control--radio">John Doe
+						      <input type="radio" name="users"/>
+						      <div class="control__indicator"></div>
+						    </label>
+						    <label class="control control--radio">John Doe
+						      <input type="radio" name="users"/>
+						      <div class="control__indicator"></div>
+						    </label>
+						</form>
+			         </div>
+			        </div>
+			        <ul class="nav nav-tabs">
+			          <li class="active"><a href="#groups" data-toggle="tab">Groups</a></li>
+			          <li><a href="#users" data-toggle="tab">Active Users</a></li>
+			        </ul>
+			    </div>
+			</div>
+    	</div>
+	</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/jquery.mmenu.all.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function() {
+		$('nav#lmenu').mmenu({
+			"extensions" : ["theme-dark"],
+			"navbar"	: {"title" : "Account Setting"}
+		});
+	});
+	$(function() {
+		$('nav#rmenu').mmenu({
+			"offCanvas"	: {"position": "right"},
+            extensions : ["theme-dark"],
+			"navbar"	: {"title" : "Membership Details"}
+		});
+	});
+</script>
+
+</body>
+</html>
